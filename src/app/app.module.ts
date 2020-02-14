@@ -9,13 +9,17 @@ import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';
 import { SummaryPipe } from './summary.pipe';
+import { StarComponent } from './star/star.component';
+import { TitlecasePipe } from './titlecase.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     AuthorsComponent,
-    SummaryPipe
+    SummaryPipe,
+    StarComponent,
+    TitlecasePipe
   ],
   imports: [
     BrowserModule,

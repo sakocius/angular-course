@@ -1,0 +1,6 @@
+<button (click)='onClick()' class="star-button">
+  <span class="star-icon glyphicon glyphicon-star" [class.glyphicon-star]='isActive' [class.glyphicon-star-empty]='!isActive'></span>
+</button>
+
+<input [(ngModel)]="title" (keyup.enter)="onKeyUp()" />
+<p>{{ title | titlecaser}}</p>
