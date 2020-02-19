@@ -2,5 +2,5 @@
   <span class="star-icon glyphicon glyphicon-star" [class.glyphicon-star]='isActive' [class.glyphicon-star-empty]='!isActive'></span>
 </button>
 
-<input [(ngModel)]="title" (keyup.enter)="onKeyUp()" />
+<input [(ngModel)]="title" />
 <p>{{ title | titlecaser}}</p>
