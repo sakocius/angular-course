@@ -13,6 +13,8 @@ import { StarComponent } from './star/star.component';
 import { TitlecasePipe } from './titlecase.pipe';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { LikeComponent } from './like/like.component';
     StarComponent,
     TitlecasePipe,
     PanelComponent,
-    LikeComponent
+    LikeComponent,
+    InputFormatDirective,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,

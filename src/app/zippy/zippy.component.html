@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+  <div
+    class="panel-heading"
+    (click)="onClick()"
+    [ngClass]="{
+      isActive: isActive
+    }"
+  >
+    {{ title }}
+    <span
+      class="glyphicon glyphicon-chevron-right"
+      [ngClass]="{
+        closed: isActive
+      }"
+    ></span>
+  </div>
+  <div class="panel-body" [hidden]="!isActive">
+    <ng-content></ng-content>
+  </div>
+</div>

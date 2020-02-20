@@ -1,6 +1,12 @@
-<button (click)='onClick()' class="star-button">
-  <span class="star-icon glyphicon glyphicon-star" [class.glyphicon-star]='isActive' [class.glyphicon-star-empty]='!isActive'></span>
+<button (click)="onClick()" class="star-button">
+  <span
+    class="star-icon glyphicon glyphicon-star"
+    [ngClass]="{
+      'glyphicon-star': isActive,
+      'glyphicon-star-empty': !isActive
+    }"
+  ></span>
 </button>
 
 <input [(ngModel)]="title" />
-<p>{{ title | titlecaser}}</p>
+<p>{{ title | titlecaser }}</p>
