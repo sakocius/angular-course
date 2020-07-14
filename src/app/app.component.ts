@@ -4,18 +4,18 @@ import { FavoriteChangedEventArgs } from "./star/star.component";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.sass"]
+  styleUrls: ["./app.component.sass"],
 })
 export class AppComponent {
   title = "Angular app";
   post = {
     title: "Title",
-    isActive: true
+    isActive: true,
   };
   tweet = {
     body: "This is the body",
     isLiked: false,
-    likesCount: 72
+    likesCount: 72,
   };
 
   courses = [];
@@ -25,7 +25,7 @@ export class AppComponent {
 
   task = {
     title: "Review applications",
-    assignee: null
+    assignee: null,
   };
 
   onActiveChanged(eventArgs: FavoriteChangedEventArgs) {
@@ -36,7 +36,7 @@ export class AppComponent {
     this.courses = [
       { id: 1, name: "Course 1" },
       { id: 2, name: "Course 2" },
-      { id: 3, name: "Course 3" }
+      { id: 3, name: "Course 3" },
     ];
   }
 
